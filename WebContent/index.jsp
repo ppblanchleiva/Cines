@@ -16,10 +16,10 @@ Context initCtx = new InitialContext();
 DataSource dataSource = (DataSource)initCtx.lookup("java:/cine");
 Connection conexion= dataSource.getConnection();
 Statement stmt =conexion.createStatement(); //Objeto Statement para consultas.
-ResultSet rs = stmt.executeQuery("select titulo from PELICULAS");
+ResultSet rs = stmt.executeQuery("select titulo,genero  from PELICULAS");
 out.println("<br>Conexion correcta");
 while (rs.next()){
-out.println ("<br>Actor: "+rs.getString ("titulo"));
+out.println ("<br>Película: "+rs.getString ("titulo")+"- Género: "+rs.getString("genero"));
 }
 rs.close();
 stmt.close();
