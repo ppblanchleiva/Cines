@@ -19,7 +19,8 @@ Statement stmt =conexion.createStatement(); //Objeto Statement para consultas.
 ResultSet rs = stmt.executeQuery("select titulo,genero  from PELICULAS");
 out.println("<br>Conexion correcta");
 while (rs.next()){
-out.println ("<br>Película skjd461894ksje: "+rs.getString ("titulo")+"- Género: "+rs.getString("genero"));
+	//sdbdoufbs
+out.println ("<br>Película skjd461894ksj///////e: "+rs.getString ("titulo")+"- Género: "+rs.getString("genero"));
 }
 rs.close();
 stmt.close();
