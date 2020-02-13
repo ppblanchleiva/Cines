@@ -12,6 +12,7 @@
 <h1>Hello World!</h1>
 <%
 try{
+	int numero = 25;
 Context initCtx = new InitialContext();
 DataSource dataSource = (DataSource)initCtx.lookup("java:/cine");
 Connection conexion= dataSource.getConnection();
@@ -19,9 +20,8 @@ Statement stmt =conexion.createStatement(); //Objeto Statement para consultas.
 ResultSet rs = stmt.executeQuery("select titulo,genero  from PELICULAS");
 out.println("<br>Conexion correcta");
 while (rs.next()){
-	//sdbdoufbs
-	int banzai = 1;
-out.println ("<br>Película skjd461894ksj///////e: "+rs.getString ("titulo")+"- Género: "+rs.getString("genero"));
+out.println ("<br>Película : "+rs.getString ("titulo")+"- Género: "+rs.getString("genero"));
+int hola = 99;
 }
 rs.close();
 stmt.close();
