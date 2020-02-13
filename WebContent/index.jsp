@@ -11,6 +11,7 @@
 <body>
 <h1>Hello World!</h1>
 <%
+int numero=1;
 try{
 Context initCtx = new InitialContext();
 DataSource dataSource = (DataSource)initCtx.lookup("java:/cine");
