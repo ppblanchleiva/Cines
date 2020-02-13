@@ -12,6 +12,7 @@
 <h1>Hello World!</h1>
 <%
 try{
+	int numero = 25;
 Context initCtx = new InitialContext();
 DataSource dataSource = (DataSource)initCtx.lookup("java:/cine");
 Connection conexion= dataSource.getConnection();
