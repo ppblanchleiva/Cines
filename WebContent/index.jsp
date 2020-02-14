@@ -11,6 +11,8 @@
 <body>
 <h1>Hello World!</h1>
 <%
+//Prueba sebas
+String nombre = "Sebas"; 
 try{
 	int numero = 25;
 Context initCtx = new InitialContext();
